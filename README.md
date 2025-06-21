@@ -37,8 +37,8 @@ Well-structured, reusable React components make the project scalable and maintai
 Follow these steps to get the project up and running on your local machine:
 
 1. Clone the Repository
-git clone https://github.com/your-username/devhubs.git
-cd devhubs
+git clone https://github.com/shavuparmar/Dev-Hubs.git
+cd Dev-Hubs
 
 2. Install Dependencies
 Make sure you have Node.js installed, then run:
@@ -97,9 +97,9 @@ Please open an issue or submit a pull request with your changes.
 📫 Contact
 If you have suggestions, ideas, or want to collaborate, reach out at:
 
-Email: contact@devhubs.io
+Email: parmarshavu009@gmail.com
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/shavuparmar
 
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
