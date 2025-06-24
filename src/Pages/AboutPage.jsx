@@ -3,7 +3,7 @@ import SidebarLayout from "../Common/SideBarLayout";
 import Footer from "./Footer";
 import Shavu from "../assets/images/Shavu.jpg"
 import Dhruv from "../assets/images/Dhruv.jpg"
-import vedmehta from "../assets/images/vedmehta.jpg"
+import vedmehta from "../assets/images/Vedmehta.jpg"
 
 
 
