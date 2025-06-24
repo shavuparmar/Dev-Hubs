@@ -3,7 +3,7 @@ import SidebarLayout from "../Common/SideBarLayout";
 import Footer from "./Footer";
 import Shavu from "../assets/images/Shavu.jpg"
 import Dhruv from "../assets/images/Dhruv.jpg"
-import vedmehta from "../assets/images/Vedmehta.jpg"
+import Vedmehta from "../assets/images/VedMehta.jpg"
 
 
 
@@ -66,7 +66,7 @@ export default function AboutPage() {
             </div>
             <div className="w-48 text-center">
               <img
-                src={vedmehta}
+                src={Vedmehta}
                 alt="Robert Brown"
                 className="w-32 h-32 rounded-full mx-auto mb-3 object-cover"
               />
