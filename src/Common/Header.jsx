@@ -17,8 +17,8 @@ export default function Header() {
       <nav className="bg-gray-300 h-16 flex items-center  justify-end ">
         <ul className="flex items-center gap-6 text-base font-medium text-gray-800 mr-5">
           <li className="cursor-pointer hover:text-blue-500"> <Link to={"/"}>Home</Link>  </li>
-          <li className="cursor-pointer hover:text-blue-500">About</li>
-          <li className="cursor-pointer hover:text-blue-500">Contact</li>
+          <li className="cursor-pointer hover:text-blue-500"> <Link to={"/about"}>  About </Link>  </li>
+          <li className="cursor-pointer hover:text-blue-500"> <Link to={"/contact"}>Contact Us </Link>  </li>
           <li>
           <Link to={"https://github.com/shavuparmar"}> <SiRefinedgithub size={34}/> </Link>
           </li>

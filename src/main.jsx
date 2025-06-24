@@ -8,7 +8,17 @@ import HomePages from './Pages/HomePages'
 import ProfilePages from './Pages/ProfilePages'
 import Software from './Pages/SoftWare'
 import Dashboard from "./Pages/DashboardPage"
-
+import PrivacyPolicy from './QuikLinks/PrivacyPolicy'
+import Disclaimer from './QuikLinks/Disclaimer'
+import Features from './QuikLinks/Features'
+import Community from './QuikLinks/Community'
+import TermsConditions from './QuikLinks/TermsConditions'
+import OpenSource from './QuikLinks/OpenSource'
+import AboutPage from './Pages/AboutPage'
+import Docs from './QuikLinks/Docs'
+import ContactPage from "./Pages/ContactPage"
+import SubmitProject from './Pages/SubmitProject'
+import ForumPage from './Pages/ForumPage'
 
 
 const AllRoutes = createBrowserRouter([
@@ -18,8 +28,8 @@ const AllRoutes = createBrowserRouter([
     title: "Home Page"
   },
   {
-    path:"/dashboard",
-    element:<Dashboard/>
+    path: "/dashboard",
+    element: <Dashboard />
   },
   {
     path: "api",
@@ -32,12 +42,55 @@ const AllRoutes = createBrowserRouter([
     title: "404 Not Found"
   },
   {
-    path:"profile",
-    element:<ProfilePages/>
+    path: "profile",
+    element: <ProfilePages />
   },
   {
-    path:"software",
-    element:<Software/>
+    path: "software",
+    element: <Software />
+  },
+  {
+    path: "privacy-policy",
+    element: <PrivacyPolicy />
+  },
+  {
+    path: "disclaimer",
+    element: <Disclaimer />
+  },
+  {
+    path: "features",
+    element: <Features />
+  },
+  {
+    path:"community",
+    element:<Community/>
+  },{
+    path:"terms-condition",
+    element:<TermsConditions/>
+  },
+  {
+    path:"open-soruce",
+    element:<OpenSource/>
+  },
+  {
+    path:"about",
+    element:<AboutPage/>
+  },
+  {
+    path:"docs",
+    element:<Docs/>
+  },
+  {
+    path:"contact",
+    element:<ContactPage/>
+  },
+  {
+    path:"SubmitProject",
+    element:<SubmitProject/>
+  },
+  {
+    path:"forum",
+    element:<ForumPage/>
   }
 ])
 
