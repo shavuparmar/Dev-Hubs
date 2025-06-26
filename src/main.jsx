@@ -19,7 +19,8 @@ import Docs from './QuikLinks/Docs'
 import ContactPage from "./Pages/ContactPage"
 import SubmitProject from './Pages/SubmitProject'
 import ForumPage from './Pages/ForumPage'
-
+import AdminPage from './Admin/AdminPage'
+import Participates from "./AdminPages/Participates"
 
 const AllRoutes = createBrowserRouter([
   {
@@ -91,6 +92,14 @@ const AllRoutes = createBrowserRouter([
   {
     path:"forum",
     element:<ForumPage/>
+  },
+  {
+    path:"work",
+    element:<AdminPage/>
+  },
+  {
+    path:"participateentry",
+    element:<Participates/>
   }
 ])
 
