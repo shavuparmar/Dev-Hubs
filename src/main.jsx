@@ -17,10 +17,20 @@ import OpenSource from './QuikLinks/OpenSource'
 import AboutPage from './Pages/AboutPage'
 import Docs from './QuikLinks/Docs'
 import ContactPage from "./Pages/ContactPage"
-import SubmitProject from './Pages/SubmitProject'
+import SubmitProject from './AdminPages/SubmitedProjectshow'
 import ForumPage from './Pages/ForumPage'
 import AdminPage from './Admin/AdminPage'
 import Participates from "./AdminPages/Participates"
+import LoginPage from './Pages/LoginPage'
+import RegisterPage from './Pages/RegisterPage'
+import ForgotPage from './Pages/ForgotPage'
+import ProfilePage from './Pages/ProfilePages'
+import ProjectForum from './Pages/ProjectForum'
+import GetUser from './AdminPages/GetUser'
+
+
+
+
 
 const AllRoutes = createBrowserRouter([
   {
@@ -100,7 +110,32 @@ const AllRoutes = createBrowserRouter([
   {
     path:"participateentry",
     element:<Participates/>
+  },
+  {
+    path:'login',
+    element:<LoginPage/>
   }
+  ,
+  {
+    path:"register",
+    element:<RegisterPage/>
+  },
+  {
+    path:"forgot",
+    element:<ForgotPage/>
+  },
+  {
+    path:"profile",
+    element:<ProfilePage/>
+  },{
+    path:"projectforum",
+    element:<ProjectForum/>
+  },
+  {
+    path:"userinfo",
+    element:<GetUser/>
+  }
+  
 ])
 
 createRoot(document.getElementById('root')).render(

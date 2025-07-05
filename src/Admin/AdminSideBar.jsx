@@ -14,7 +14,7 @@ import { SiBmcsoftware } from "react-icons/si";
 
 // import "react-pro-sidebar/dist/css/styles.css";
 
-export default function SidebarLayout({ children }) {
+export default function AdminSideBar({ children }) {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const toggleSidebar = () => setIsMobileOpen((prev) => !prev);
@@ -43,7 +43,9 @@ export default function SidebarLayout({ children }) {
             <img src={logo} className="h-14 mt-8 w-50 ml-5 mb-10" alt="" />
             <MenuItem component={ <Link to={""}/> } icon={<MdDeveloperBoard size={24} />}>Dashboard</MenuItem>
 
+            <MenuItem component={<Link to={"/userinfo"} />} icon={<LuLink size={24}/>}>All User</MenuItem>
             <MenuItem component={<Link to={"/participateentry"} />} icon={<LuLink size={24}/>}> Participate Entries</MenuItem>
+            <MenuItem component={<Link to={"/SubmitProject"} />} icon={<LuLink size={24}/>}> Submited Projects</MenuItem>
             <MenuItem component={<Link to={""}/>} icon={<SiBmcsoftware size={24} />}>software</MenuItem>
             <MenuItem component={<Link to={""}/>} icon={<FaUser />}>Profile</MenuItem>
           </Menu>

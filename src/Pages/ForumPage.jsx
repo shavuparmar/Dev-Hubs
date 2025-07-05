@@ -16,7 +16,8 @@ export default function ForumPage() {
   };
 
   // Replace this URL with your backend endpoint
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+  const BACKEND_URL = `${import.meta.env.VITE_BACKEND_URL}/entries`;
+
 
 
 

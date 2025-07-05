@@ -17,8 +17,8 @@ export default function Community() {
       description:
         "Help build open-source APIs, tools, or docs. All skill levels welcome—every contribution matters.",
       icon: "🛠️",
-      link: "SubmitProject", // Replace with real GitHub
-      external: true,
+      link: "/ProjectForum", // Replace with real GitHub
+      
     },
     {
       title: "Attend Community Events",

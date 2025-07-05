@@ -59,6 +59,7 @@ export default function DevHubsLandingPage() {
               </a>
             ))}
           </nav>
+          <Link to={"/login"} className="ml-5 bg-slate-400 hover:bg-gray-600 px-5 py-1 rounded-xl text-lg">Login</Link>
         </div>
       </header>
 
