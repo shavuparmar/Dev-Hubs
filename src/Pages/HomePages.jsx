@@ -58,8 +58,8 @@ export default function DevHubsLandingPage() {
                 {id.charAt(0).toUpperCase() + id.slice(1)}
               </a>
             ))}
+          
           </nav>
-          <Link to={"/login"} className="ml-5 bg-slate-400 hover:bg-gray-600 px-5 py-1 rounded-xl text-lg">Login</Link>
         </div>
       </header>
 
@@ -74,13 +74,14 @@ export default function DevHubsLandingPage() {
         <p className="text-gray-400 max-w-3xl mb-12 md:text-lg animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
           DevHubs is your one-stop destination for open-source APIs, software tools, and development resources — completely free and curated for creators.
         </p>
-        <Link
+        {/* <Link
           to="/dashboard"
           className="px-10 py-3 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 font-semibold animate-fade-in-up"
           style={{ animationDelay: "0.6s" }}
         >
           Explore Dashboard
-        </Link>
+        </Link> */}
+        <Link to={"/login"} className="px-10 py-3 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 font-semibold animate-fade-in-up">Login</Link>
       </section>
 
       {/* About */}

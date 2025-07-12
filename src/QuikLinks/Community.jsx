@@ -21,7 +21,7 @@ export default function Community() {
       
     },
     {
-      title: "Attend Community Events",
+      title: "Attend Community Events", 
       description:
         "Join live workshops, hackathons, or AMA sessions to connect and grow with peers.",
       icon: "🎉",
