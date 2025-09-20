@@ -27,6 +27,8 @@ import ForgotPage from './Pages/ForgotPage'
 import ProfilePage from './Pages/ProfilePages'
 import ProjectForum from './Pages/ProjectForum'
 import GetUser from './AdminPages/GetUser'
+import AiChat from './Pages/AiChat'
+import CodeEditor from './Pages/CodeEditorPage'
 
 
 
@@ -134,8 +136,16 @@ const AllRoutes = createBrowserRouter([
   {
     path:"userinfo",
     element:<GetUser/>
+  },
+  {
+    path:"aichating",
+    element:<AiChat/>
   }
-  
+  ,
+  {
+    path:"codeitor",
+    element:<CodeEditor/>
+  }
 ])
 
 createRoot(document.getElementById('root')).render(

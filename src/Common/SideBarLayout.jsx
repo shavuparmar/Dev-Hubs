@@ -1,7 +1,7 @@
 // src/Layout/SidebarLayout.jsx
 import  { useState } from "react";
 import { Sidebar as ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
-import {FaUser , FaBars, FaTimes } from "react-icons/fa";
+import {FaUser , FaBars, FaTimes, FaCode } from "react-icons/fa";
 import Header from "./Header";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/Logo.png"
@@ -10,7 +10,7 @@ import { MdDeveloperBoard } from "react-icons/md";
 
 import { LuLink } from "react-icons/lu";
 import { SiBmcsoftware } from "react-icons/si";
-
+import { IoChatbubbleSharp } from "react-icons/io5";
 
 // import "react-pro-sidebar/dist/css/styles.css";
 
@@ -35,13 +35,14 @@ export default function SidebarLayout({ children }) {
             </button>
           </div>
 
-          {/* Logo */}
-          {/* <Logo /> */}
+        
 
           {/* Menu */}
           <Menu iconShape="circle">
             <img src={logo} className="h-14 mt-8 w-50 ml-5 mb-10" alt="" />
             <MenuItem component={ <Link to={"/dashboard"}/> } icon={<MdDeveloperBoard size={24} />}>Dashboard</MenuItem>
+            <MenuItem component={ <Link to={"/codeitor"}/> } icon={<FaCode size={24} />}>Code Editor</MenuItem>
+            <MenuItem component={<Link to={"/aichating"}/>} icon={<IoChatbubbleSharp />}>Ai Chat</MenuItem>
 
             <MenuItem component={<Link to={"/api"} />} icon={<LuLink size={24}/>}>API</MenuItem>
             <MenuItem component={<Link to={"/software"}/>} icon={<SiBmcsoftware size={24} />}>software</MenuItem>

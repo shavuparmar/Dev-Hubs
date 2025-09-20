@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import SideBar from '../Admin/AdminSideBar';
 
-const BACKEND_URL = 'http://localhost:4000/entries';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 export default function Participate() {
   const [entries, setEntries] = useState([]);

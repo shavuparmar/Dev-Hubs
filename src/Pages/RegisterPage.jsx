@@ -23,22 +23,37 @@ export default function RegisterPage() {
     setLoading(true)
 
     try {
+      // Make sure your backend server is running at this URL
       const response = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/api/register`,
+        `${import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000'}/api/register`,
         {
           email,
           username,
           password,
-        }
+        },
+        { timeout: 5000 } // optional: timeout to detect network issues
       )
 
       console.log('Registration Success:', response.data)
       setMessage('Account created successfully! Please log in.')
+      setError(null)
+
+      // Clear form fields after success
+      setEmail('')
+      setUsername('')
+      setPassword('')
+      setConfirmPassword('')
     } catch (err) {
       console.error('Registration failed:', err)
-      setError(
-        err?.response?.data?.error || 'Registration failed. Please try again.'
-      )
+
+      // Better network error handling
+      if (err.code === 'ERR_NETWORK') {
+        setError('Cannot connect to server. Is backend running?')
+      } else if (err.response?.data?.error) {
+        setError(err.response.data.error)
+      } else {
+        setError('Registration failed. Please try again.')
+      }
     } finally {
       setLoading(false)
     }
